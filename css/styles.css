@@ -122,6 +122,7 @@
   /* continuous single-stroke heart — dusty rose */
   .heart-mark{ display:block; width:clamp(120px,26vw,168px); height:auto; margin:clamp(var(--sp-42),7vw,var(--sp-64)) auto 0; }
   .heart-path{ fill:none; stroke:var(--rose); stroke-width:2.2; stroke-linecap:round; }
+  .pulse-line{ fill:none; stroke:var(--rose); stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
 
   /* ---- buttons ---- */
   .btn{
@@ -244,7 +245,8 @@
 
   /* ============ MOTION ============ */
   @media (prefers-reduced-motion: no-preference){
-    .heart-path{ stroke-dasharray:520; stroke-dashoffset:520; animation:draw 2.6s ease-out .3s forwards; }
+    .heart-path{ stroke-dasharray:520; stroke-dashoffset:520; animation:draw 2s ease-out .3s forwards; }
+    .pulse-line{ stroke-dasharray:900; stroke-dashoffset:900; animation:draw 4s ease-out .9s forwards; }
     .rise{ opacity:0; transform:translateY(14px); animation:rise .8s ease-out forwards; }
     .r1{ animation-delay:.05s; } .r2{ animation-delay:.18s; } .r3{ animation-delay:.32s; } .r4{ animation-delay:.46s; }
   }

@@ -21,19 +21,28 @@
     <p class="title-line rise r3">SURVIVING A WIDOWMAKER</p>
     <p class="sub rise r3">A memoir of healing, resilience, and learning to live beyond diagnosis.</p>
     <div class="cta-row rise r4">
-      <a class="btn btn-primary" href="#signup">Join the Book List</a>
+      <a class="btn btn-primary" href="#signup">Join the book list</a>
       <span class="cta-note">Be the first to know when it&rsquo;s released.</span>
     </div>
-
-    <svg class="heart-mark" viewBox="0 0 200 176" role="img" aria-label="A heart drawn in a single continuous line.">
-      <path class="heart-path"
-        d="M100,158
-           C60,126 18,96 18,58
-           C18,32 38,14 62,14
-           C82,14 96,28 100,44
-           C104,28 118,14 138,14
-           C162,14 182,32 182,58
-           C182,96 140,126 100,158 Z" />
+    <svg class="heart-mark" viewBox="0 0 300 176" role="img"
+        aria-label="A heartbeat line on each side of a heart drawn in a single continuous stroke.">
+      <!-- left trace: negative x nudges it further left -->
+      <g transform="translate(-24,0)">
+        <path class="pulse-line"
+          d="M0,96 H44 L52,96 L60,74 L70,120 L80,86 L86,96 H104,"/>
+      </g>
+      <!-- right trace: positive x nudges it further right -->
+      <g transform="translate(24,0)">
+        <path class="pulse-line"
+          d="M300,96 H256 L248,96 L240,74 L230,120 L220,86 L214,96 H196"/>
+      </g>
+      <!-- heart, centered and open -->
+      <g transform="translate(50,0)">
+        <path class="heart-path"
+          d="M100,158 C60,126 18,96 18,58 C18,32 38,14 62,14
+            C82,14 96,28 100,44 C104,28 118,14 138,14
+            C162,14 182,32 182,58 C182,96 140,126 100,158 Z" />
+      </g>
     </svg>
   </div>
 </header>
