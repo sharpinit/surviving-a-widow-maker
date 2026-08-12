@@ -204,7 +204,7 @@
   form[hidden]{ display:none; }
 
   /* ============ ABOUT ============ */
-  .about .wrap{ display:grid; grid-template-columns:132px 1fr; gap:var(--sp-26); align-items:start; }
+  .about .wrap{ display:grid; grid-template-columns:20rem 1fr; gap:var(--sp-26); align-items:start; }
   @media (max-width:520px){ .about .wrap{ grid-template-columns:1fr; gap:var(--sp-20); } }
   .portrait{
     width:100%; height:auto; border-radius:var(--r-8);
