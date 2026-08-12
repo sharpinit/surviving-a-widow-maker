@@ -1,9 +1,175 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surviving a Widowmaker — A memoir by Kevan Sharp</title>
+<meta name="description" content="Surviving a Widowmaker: a memoir of healing, resilience, and learning to live beyond diagnosis. Join the early reader list.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Trimmed to only the weights actually used: Fraunces 400/500 + italic 400; Archivo 400/500/600/700 -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<a class="skip" href="#signup">Skip to the sign-up form</a>
 
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow rise r1"><span class="dot" aria-hidden="true"></span>A Memoir · Coming Soon</p>
+    <h1 class="rise r2">What happens when surviving is only the <em>beginning?</em></h1>
+    <p class="title-line rise r3">SURVIVING A WIDOWMAKER</p>
+    <p class="sub rise r3">A memoir of healing, resilience, and learning to live beyond diagnosis.</p>
+    <div class="cta-row rise r4">
+      <a class="btn btn-primary" href="#signup">Join the Book List</a>
+      <span class="cta-note">Be the first to know when it&rsquo;s released.</span>
+    </div>
+
+    <svg class="heart-mark" viewBox="0 0 200 176" role="img" aria-label="A heart drawn in a single continuous line.">
+      <path class="heart-path"
+        d="M100,158
+           C60,126 18,96 18,58
+           C18,32 38,14 62,14
+           C82,14 96,28 100,44
+           C104,28 118,14 138,14
+           C162,14 182,32 182,58
+           C182,96 140,126 100,158 Z" />
+    </svg>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section" aria-labelledby="hook-h">
+    <div class="wrap">
+      <p class="kicker">The Story</p>
+      <h2 id="hook-h">Not, in the end, a book about illness.</h2>
+      <p class="lead">
+        In March 2023, Kevan Sharp survived a widowmaker heart attack after a 100% blockage of the
+        LAD had gone untreated for nearly twenty hours. What followed was not a simple recovery.
+      </p>
+      <p class="toll">Heart failure. Multiple stents. Parkinson&rsquo;s disease. Strokes. PTSD. Years of medical uncertainty.</p>
+      <p class="muted-p">
+        But this is not primarily a book about illness. It is the story of a man who began to
+        understand that healing was different from being cured — and that a diagnosis did not have to
+        become an identity.
+      </p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section" aria-labelledby="inside-h">
+    <div class="wrap">
+      <p class="kicker">What You&rsquo;ll Find Inside</p>
+      <h2 id="inside-h">A broken heart that had little to do with arteries.</h2>
+      <p class="muted-p">
+        <em>Surviving a Widowmaker</em> traces a journey through childhood trauma, achievement, loss of
+        identity, fear, medical crisis, and the search for belonging and meaning. Along the way, Kevan
+        began confronting a much older wound: a broken heart that had little to do with arteries, and
+        everything to do with learning to value and love himself.
+      </p>
+      <p class="muted-p">
+        The book explores resilience without pretending that recovery is easy, or that there is one
+        path that works for everyone. It is a story about continuing to search, continuing to change,
+        and refusing to give up when life no longer looks the way you expected.
+      </p>
+    </div>
+  </section>
+
+  <section class="section signup" id="signup" aria-labelledby="signup-h">
+    <div class="wrap">
+      <p class="kicker">Early Reader List</p>
+      <h2 id="signup-h">Keep me updated on the book.</h2>
+      <p class="muted-p">
+        The manuscript is currently in development. If you&rsquo;d like to be notified when
+        <em>Surviving a Widowmaker</em> is available — or receive occasional updates as it moves toward
+        publication — join the early reader list below.
+      </p>
+
+      <form id="lead-form" novalidate>
+        <div class="field-row">
+          <div class="field" id="f-first">
+            <label class="lab" for="first">First name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="first" name="first" autocomplete="given-name" required aria-required="true" aria-describedby="first-err">
+            <p class="err" id="first-err">Please enter your first name.</p>
+          </div>
+          <div class="field" id="f-last">
+            <label class="lab" for="last">Last name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="last" name="last" autocomplete="family-name" required aria-required="true" aria-describedby="last-err">
+            <p class="err" id="last-err">Please enter your last name.</p>
+          </div>
+        </div>
+        <div class="field" id="f-email">
+          <label class="lab" for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-required="true" aria-describedby="email-hint email-err" placeholder="you@example.com">
+          <p class="hint" id="email-hint">We&rsquo;ll only email about the book. Unsubscribe anytime.</p>
+          <p class="err" id="email-err">Please enter a valid email address.</p>
+        </div>
+        <label class="check" for="advance">
+          <input type="checkbox" id="advance" name="advance" value="yes">
+          <span>I may be interested in being an early reader / advance reader.</span>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">Keep me updated</button>
+        <p class="form-foot">No spam. Just word when the book is ready.</p>
+      </form>
+
+      <div class="success" id="success" role="status" aria-live="polite">
+        <h3>You&rsquo;re on the list.</h3>
+        <p>Thank you — we&rsquo;ll be in touch as <em>Surviving a Widowmaker</em> moves toward release.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section about" aria-labelledby="author-h">
+    <div class="wrap">
+      <img class="portrait" src="img/kevan-sharp.jpg"><div class="portrait" role="img" aria-label="Portrait of author Kevan Sharp (casual photo to be added).">Author photo</div>
+      <div>
+        <p class="kicker">About the Author</p>
+        <h2 id="author-h">Kevan Sharp</h2>
+        <p class="name">Ph.D., P.E.</p>
+        <p>
+          A retired engineer, executive, educator, mentor, and longtime youth volunteer. After surviving
+          a widowmaker heart attack and navigating a series of serious medical challenges, he began
+          exploring the difference between simply surviving and truly healing.
+          <em>Surviving a Widowmaker</em> is his first book.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="closing">
+  <div class="wrap">
+    <p class="affirm">
+      Your diagnosis is not your identity.<br>
+      Your story is <span class="g">still being written.</span>
+      <span class="enough">That is enough.</span>
+    </p>
+    <p class="colophon">Surviving a Widowmaker · A memoir by Kevan Sharp</p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var form=document.getElementById('lead-form'), success=document.getElementById('success');
+    var first=document.getElementById('first'), last=document.getElementById('last'), email=document.getElementById('email');
+    function wrap(i){ return i.closest('.field'); }
+    function setErr(i,on){ var w=wrap(i); if(w) w.classList.toggle('invalid',on); i.setAttribute('aria-invalid', on?'true':'false'); }
+    function okEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); }
+    [first,last,email].forEach(function(i){ i.addEventListener('input', function(){ if(i.getAttribute('aria-invalid')==='true') setErr(i,false); }); });
+    form.addEventListener('submit', function(e){
+      e.preventDefault(); var bad=null;
+      var a=first.value.trim()===''; setErr(first,a); if(a&&!bad)bad=first;
+      var b=last.value.trim()===''; setErr(last,b); if(b&&!bad)bad=last;
+      var c=!okEmail(email.value); setErr(email,c); if(c&&!bad)bad=email;
+      if(bad){ bad.focus(); return; }
+      /* Wire to your email provider here (Mailchimp / ConvertKit / etc.) */
+      form.setAttribute('hidden',''); success.style.display='block';
+      success.scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  })();
+</script>
 </body>
 </html>
