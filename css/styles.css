@@ -198,10 +198,10 @@
   .about .wrap{ display:grid; grid-template-columns:132px 1fr; gap:2.56rem; align-items:start; }
   @media (max-width:520px){ .about .wrap{ grid-template-columns:1fr; gap:1.92rem; } }
   .portrait{
-    width:132px; height:164px; border-radius:var(--r-8);
+    width:100%; height:auto; border-radius:var(--r-8);
     background:linear-gradient(150deg, var(--teal), var(--teal-deep));
-    display:flex; align-items:center; justify-content:center; text-align:center;
-    color:var(--cream); font-family:var(--font-util); font-size:var(--fs-12); letter-spacing:.06em; padding:.96rem;
+    display:block; align-items:center; justify-content:center; text-align:center;
+    color:var(--cream); font-family:var(--font-util); font-size:var(--fs-12); letter-spacing:.06em; padding:.4rem;
     border:1px solid var(--line);
   }
   @media (max-width:520px){ .portrait{ width:120px; height:150px; } }
